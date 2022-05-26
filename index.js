@@ -51,11 +51,7 @@ function readFile() {
     });
 }
 
-
-app.get('/', (req, res) => {
-    res.json(stories);
-})
-
+readFile();
 app.get('/', (req, res) => {
     res.json(stories);
 })
